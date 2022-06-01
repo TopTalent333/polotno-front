@@ -1,0 +1,45 @@
+{
+  "name": "onboard-notify-react",
+  "version": "0.19.1",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "3.1.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "sweetalert": "^2.1.2"
+  },
+  "scripts": {
+    "setup-staging-env": "yarn upgrade '@web3-onboard/coinbase@next' '@web3-onboard/fortmatic@next' '@web3-onboard/gnosis@next' '@web3-onboard/injected-wallets@next' '@web3-onboard/keepkey@next' '@web3-onboard/keystone@next' '@web3-onboard/ledger@next' '@web3-onboard/magic@next' '@web3-onboard/portis@next' '@web3-onboard/react@next' '@web3-onboard/torus@next' '@web3-onboard/trezor@next'",
+    "setup-prod-env": "yarn upgrade '@web3-onboard/coinbase' '@web3-onboard/fortmatic' '@web3-onboard/gnosis' '@web3-onboard/injected-wallets' '@web3-onboard/keepkey' '@web3-onboard/keystone' '@web3-onboard/ledger' '@web3-onboard/magic' '@web3-onboard/portis' '@web3-onboard/react' '@web3-onboard/torus' '@web3-onboard/trezor'",
+    "start": "set PORT=8000 && react-scripts start",
+    "start-staging": "REACT_APP_API_URL=wss://staging.api.blocknative.com/v0 REACT_APP_STAGING=true HTTPS=true HTTPS=true react-scripts start",
+    "start-local": "REACT_APP_API_URL=ws://localhost:54100/v0 REACT_APP_STAGING=true HTTPS=true react-scripts start",
+    "build": "craco build",
+    "build-staging": "REACT_APP_API_URL=wss://staging.api.blocknative.com/v0 REACT_APP_STAGING=true craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

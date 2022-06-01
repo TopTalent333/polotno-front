@@ -1,0 +1,4 @@
+export const actions = {
+    CONTRACTCALL: 'CONTRACTCALL',
+    UPDATEBNBAMOUNT: 'UPDATEBNBAMOUNT'
+}

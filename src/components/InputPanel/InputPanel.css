@@ -1,0 +1,34 @@
+.InputPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-direction: column;
+  font-weight : 700;
+  line-height: 19.36px;
+  font-size: 16px;
+  height: 90px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.7px;
+}
+
+.InputPanel .Title {
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.InputPanel .Description {
+  color: white;
+}
+
+
+.InputPanel .Input {
+  color: white !important;
+  background-color: rgba(96, 205, 29, 0.75);
+  height: 41px;
+  border: none;
+}

@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  bottom: 0;
+  padding: 4px 0 6px;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  transition: all 250ms;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 16px;
+}
+
+.social-links span {
+  transition: all 250ms;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.social-links:hover > span {
+  color: #D0D4F7;
+}
+
+.github {
+  background-color: black;
+  -webkit-mask: url(../../assets/icons/github-icon.svg) no-repeat 8px 8px / 30px;
+  mask: url(../../assets/icons/github-icon.svg) no-repeat 8px 8px / 30px;
+}
+
+.social-links:hover > .github {
+  background-color: #D0D4F7;
+  -webkit-mask: url(../../assets/icons/github-icon.svg) no-repeat 8px 8px / 30px;
+  mask: url(../../assets/icons/github-icon.svg) no-repeat 8px 8px / 30px;
+}
+
+.twitter {
+  background-color: black;
+  -webkit-mask: url(../../assets/icons/twitter-icon.svg) no-repeat 8px 8px / 30px;
+  mask: url(../../assets/icons/twitter-icon.svg) no-repeat 8px 8px / 30px;
+}
+
+.social-links:hover > .twitter {
+  background-color: #D0D4F7;
+  -webkit-mask: url(../../assets/icons/twitter-icon.svg) no-repeat 8px 8px / 30px;
+  mask: url(../../assets/icons/twitter-icon.svg) no-repeat 8px 8px / 30px;
+}
+
+.discord {
+  background-color: black;
+  -webkit-mask: url(../../assets/icons/discord-icon.svg) no-repeat 8px 8px / 30px;
+  mask: url(../../assets/icons/discord-icon.svg) no-repeat 8px 8px / 30px;
+  height: 37px;
+  margin-top: 4px;
+}
+
+.social-links:hover > .discord {
+  background-color: #D0D4F7;
+  -webkit-mask: url(../../assets/icons/discord-icon.svg) no-repeat 8px 8px / 30px;
+  mask: url(../../assets/icons/discord-icon.svg) no-repeat 8px 8px / 30px;
+}
+
+
+@media screen and (max-width: 760px) {
+
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .social-links span {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 670px) {
+  .footer {
+    position: initial;
+    margin-top: auto;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .social-links span {
+    text-align: center;
+  }
+
+}
